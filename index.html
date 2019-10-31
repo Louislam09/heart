@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #0F111A;
+            color: white;
+            font-family: "Seravek", Calibri;
+        }
+
+        .container {
+            margin: 0 auto;
+            margin-top: 20px;
+            max-width: 800px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formulario input {
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 2em;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .formulario input:focus {
+            outline: 0;
+        }
+
+        .formulario input:active {
+            outline: 0;
+        }
+
+
+        button {
+            background-color: rgb(35, 40, 61);
+            border-color: white;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        button:focus {
+            outline: 0;
+        }
+
+        button:hover {
+            background-color: rgb(19, 21, 32);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dibujo En Canvas</h1>
+        <P>
+            <div class="formulario">
+
+                <input onKeyup="this.value=this.value.toUpperCase()" type="text" id="texto_color1"
+                    placeholder="Escribe Un Color" />
+                <input type="button" value="Dibujar" id="botoncito1" />
+                <canvas id="dibujito1"></canvas>
+                <p>Asi queda tu dibujo</p>
+
+                <script src="dibujo1.js"></script>
+
+</body>
+
+</html>
