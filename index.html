@@ -63,6 +63,11 @@
             background-color: rgb(19, 21, 32);
             cursor: pointer;
         }
+
+        #colorSelector {
+            position: relative;
+            left: 40%;
+        }
     </style>
 </head>
 
@@ -71,9 +76,13 @@
         <h1>Dibujo En Canvas</h1>
         <P>
             <div class="formulario">
+                <h1>Selecciona Un Color </h1>
+                ↓↓
+                <br>
 
-                <input onKeyup="this.value=this.value.toUpperCase()" type="text" id="texto_color1"
-                    placeholder="Escribe Un Color" />
+                <input type="color" id="colorSelector" onchange="ColorChosen()">
+                <!-- <input onKeyup="this.value=this.value.toUpperCase()" type="text" id="texto_color1"
+                    placeholder="Escribe Un Color" /> -->
                 <input type="button" value="Dibujar" id="botoncito1" />
                 <canvas id="dibujito1"></canvas>
                 <p>Asi queda tu dibujo</p>
